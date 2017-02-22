@@ -5805,6 +5805,16 @@ svg.brand-icon {
     text-align: left; }
   .value .divider {
     margin: 0 0 1.25rem 0; }
+  @media screen and (max-width: 39.9375em) {
+    .value {
+      text-align: center; }
+      .value .brand-icon {
+        float: none;
+        margin: 0; }
+      .value .divider {
+        margin: 0 auto 1.25rem; }
+      .value .value-text {
+        text-align: center; } }
 
 .service-nav {
   border-bottom: 3px solid #232E5E; }

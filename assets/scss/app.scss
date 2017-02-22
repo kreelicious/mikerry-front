@@ -289,7 +289,9 @@ svg.brand-icon{width: 86px;height: 86px;@include transition(0.3s ease-in-out);
 	.value-content-wrap, .team-content-wrap, .support-service-wrap{padding: 1.25rem;text-align: center;
 
 	}
-	@include breakpoint(small){margin-bottom: 1.25rem;}
+	@include breakpoint(small){margin-bottom: 1.25rem;
+		
+	}
 }
 
 .team-profile, .support-services{margin: 2.5rem auto;
@@ -343,6 +345,11 @@ svg.brand-icon{width: 86px;height: 86px;@include transition(0.3s ease-in-out);
 	.brand-icon{float: left;margin-right: 1.25rem;}
 	.value-text{position: relative;overflow: hidden;text-align: left;}
 	.divider{margin: 0 0 1.25rem 0;}
+	@include breakpoint(small only){text-align: center;
+		.brand-icon{float: none;margin: 0;}
+		.divider{margin: 0 auto 1.25rem;}
+		.value-text{text-align: center}
+	}
 }
 
 
