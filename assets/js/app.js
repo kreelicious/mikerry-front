@@ -1,6 +1,12 @@
 $(document).foundation();
 $(document).ready(function(){
 
+	//Main Navigation Toggle
+	$('#primary-nav').on('click', '.nav-trigger', function(e){
+		e.preventDefault();
+		$('#primary-nav').toggleClass('nav-open');
+	});
+
 	// Clients Owl Carousel
 	$(".client-carousel").owlCarousel({
 
@@ -47,6 +53,5 @@ $(document).ready(function(){
 		return false;
 
 	});
-
 
 });

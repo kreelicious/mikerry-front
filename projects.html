@@ -11,73 +11,43 @@
   </head>
   <body class="body">
 
-    <div class="off-canvas-wrapper">
+    <!-- "masthead" top-bar menu for 'medium' and up -->
 
-      <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
-
-        <div data-sticky-container>
-
-          <!-- off-canvas title bar for 'small' screen -->
-
-          <div class="title-bar" data-responsive-toggle="masthead" data-hide-for="medium">
-
-            <div class="title-bar-left">
-
-              <a href="home.html" class="logo">
-                <img src="assets/images/mikerry-logo.svg" alt="Mikerry Rail">
-              </a>
-
-            </div>
-
-            <div class="title-bar-right">
-
-              <button class="menu-icon" type="button" data-open="offCanvasRight"></button>
-
-            </div>
-
-          </div>
-
-          <!-- off-canvas right menu -->
-
-          <div class="off-canvas position-right" id="offCanvasRight" data-off-canvas data-position="right">
-
-            <ul class="vertical accordion menu" data-accordion-menu>
-
-              <li><a href="home.html">Home</a></li>
-
-              <li><a href="about.html">About Us</a></li>
-
-              <li><a href="services.html">Services</a></li>
-
-              <li><a href="projects.html">Projects</a></li>
-
-              <li><a href="contact.html">Contact</a></li>
-
-            </ul>
-
-          </div>
-
-          <!-- "masthead" top-bar menu for 'medium' and up -->
-
-          <header id="masthead" class="site-header fullWidth sticky" role="banner" data-sticky data-margin-top="0" data-option="anchor:body;marginTop:0;stickyOn:small;">
+    <div data-sticky-container>
+      
+      <header id="masthead" class="site-header fullWidth sticky" role="banner" data-sticky data-margin-top="0">
+    
+        <div class="row">
           
-            <div class="row">
-              
-              <div class="large-12 medium-12 small-12 columns">
+          <div class="large-12 medium-12 small-12 columns">
+            
+            <div class="top-bar">
+
+              <div class="top-bar-left">
+                  
+                <a href="home.html" class="logo float-left">
+                    <h1>Mikerry Rail</h1>
+                </a>
+
+              </div>
+
+              <div class="top-bar-right">
                 
-                <div class="top-bar">
+                <div id="primary-nav">
 
-                  <div class="top-bar-left">
+                  <a href="#main-nav" class="nav-trigger hide-for-large">
+                    
+                    <span>
                       
-                    <a href="" class="logo float-left">
-                        <img src="assets/images/mikerry-logo.svg" alt="Mikerry Rail">
-                    </a>
+                      <em aria-hidden="true"></em>Menu
 
-                  </div>
+                    </span>
 
-                  <div class="top-bar-right">
+                  </a>
 
-                    <ul class="dropdown menu" data-dropdown-menu>
+                  <nav class="navigation">
+                      
+                    <ul>
 
                       <li><a href="home.html">Home</a> </li>
 
@@ -91,7 +61,9 @@
 
                     </ul>
 
-                  </div>
+                    <a href="tel:" class="cta">call now</a>
+
+                  </nav>
 
                 </div>
 
@@ -99,326 +71,317 @@
 
             </div>
 
-          </header>
+          </div>
 
         </div>
 
-        <!-- original content goes in this container -->
+      </header>
 
-        <div class="off-canvas-content" data-off-canvas-content>
+    </div>
+
+    <div class="hero-banner bg-image">
+
+      <div class="overlay blue">
+        
+        <div class="banner-content">
           
-          <div class="hero-banner bg-image">
-
-            <div class="overlay blue">
-              
-              <div class="banner-content">
-                
-                <div class="row">
-                  
-                  <div class="large-12 medium-12 small-12 columns text-center">
-
-                    <h1 class="big-banner-title">Projects</h1>
-
-                    <p class="banner-subtitle">With a proven track record</p>
-
-                    <div class="divider"></div>
-  
-                  </div>
-
-                </div>
-
-              </div>
-
-            </div>            
-
-          </div>
-
-          <div id="projects" class="content-padding fullWidth">
-
-            <div class="project-filter">
-              
-              <div class="row">
-                
-                <div class="large-12 medium-12 small-12 columns">
-                  
-                  <div class="project-nav">
-                      
-                    <ul>
-                      
-                      <li><a class="active" data-filter="*">All</a></li>
-
-                      <li><a data-filter=".railway">Railway</a></li>
-
-                      <li><a data-filter=".construction">Construction</a></li>
-
-                      <li><a data-filter=".building">Building</a></li>
-
-                    </ul>
-
-                  </div>
-
-                </div>
-
-              </div>
-
-            </div> 
-
-            <div class="row">
-              
-              <div class="large-12 medium-12 small-12 columns">
-                
-                <div class="project-grid">
-                    
-                  <div class="project-item railway">
-                    
-                    <div class="project-wrapper">
-                    
-                      <div class="project-bg" style="background-image: url('assets/images/placeholder-2.jpg');"></div>
-
-                      <div class="project-overlay">
-                        
-                        <div class="project-info-wrapper">
-                          
-                          <h4 class="project-title">Project Title</h4>
-
-                          <p class="project-tag">Tag, Tag, Tag</p>
-
-                          <a href="" class="button hollow small">View Project</a>
-
-                        </div>
-
-                      </div>
-
-                    </div>
-
-                  </div>
-
-                  <div class="project-item building">
-                    
-                    <div class="project-wrapper">
-                    
-                      <div class="project-bg" style="background-image: url('assets/images/placeholder-2.jpg');"></div>
-
-                      <div class="project-overlay">
-                        
-                        <div class="project-info-wrapper">
-                          
-                          <h4 class="project-title">Project Title</h4>
-
-                          <p class="project-tag">Tag, Tag, Tag</p>
-
-                          <a href="" class="button hollow small">View Project</a>
-
-                        </div>
-
-                      </div>
-
-                    </div>
-
-                  </div>
-
-                  <div class="project-item construction">
-                    
-                    <div class="project-wrapper">
-                    
-                      <div class="project-bg" style="background-image: url('assets/images/placeholder-2.jpg');"></div>
-
-                      <div class="project-overlay">
-                        
-                        <div class="project-info-wrapper">
-                          
-                          <h4 class="project-title">Project Title</h4>
-
-                          <p class="project-tag">Tag, Tag, Tag</p>
-
-                          <a href="" class="button hollow small">View Project</a>
-
-                        </div>
-
-                      </div>
-
-                    </div>
-
-                  </div>
-
-                  <div class="project-item railway">
-                    
-                    <div class="project-wrapper">
-                    
-                      <div class="project-bg" style="background-image: url('assets/images/placeholder-2.jpg');"></div>
-
-                      <div class="project-overlay">
-                        
-                        <div class="project-info-wrapper">
-                          
-                          <h4 class="project-title">Project Title</h4>
-
-                          <p class="project-tag">Tag, Tag, Tag</p>
-
-                          <a href="" class="button hollow small">View Project</a>
-
-                        </div>
-
-                      </div>
-
-                    </div>
-
-                  </div>
-
-                  <div class="project-item building">
-                    
-                    <div class="project-wrapper">
-                    
-                      <div class="project-bg" style="background-image: url('assets/images/placeholder-2.jpg');"></div>
-
-                      <div class="project-overlay">
-                        
-                        <div class="project-info-wrapper">
-                          
-                          <h4 class="project-title">Project Title</h4>
-
-                          <p class="project-tag">Tag, Tag, Tag</p>
-
-                          <a href="" class="button hollow small">View Project</a>
-
-                        </div>
-
-                      </div>
-
-                    </div>
-
-                  </div>
-
-                  <div class="project-item construction">
-                    
-                    <div class="project-wrapper">
-                    
-                      <div class="project-bg" style="background-image: url('assets/images/placeholder-2.jpg');"></div>
-
-                      <div class="project-overlay">
-                        
-                        <div class="project-info-wrapper">
-                          
-                          <h4 class="project-title">Project Title</h4>
-
-                          <p class="project-tag">Tag, Tag, Tag</p>
-
-                          <a href="" class="button hollow small">View Project</a>
-
-                        </div>
-
-                      </div>
-
-                    </div>
-
-                  </div>
-
-                </div>
-
-              </div>
-
-            </div>
-
-          </div>
-
-
-          <footer class="footer">
+          <div class="row">
             
-            <div class="row">
-              
-              <div class="large-4 medium-4 small-12 columns">
-                
-                <h3 class="footer-title orange">Company Details</h3>
+            <div class="large-12 medium-12 small-12 columns text-center">
 
-                <a href="emailto:admin@mikerryrail.co.uk" class="link-group">
-                  
-                  <button class="link-icon orange">
-                    <i class="fa fa-envelope"></i>
-                  </button>
+              <h1 class="big-banner-title">Projects</h1>
 
-                  <span class="link-text">admin@mikerryrail.co.uk</span>
+              <p class="banner-subtitle">With a proven track record</p>
 
-                </a>
-
-                <a href="tel:01685377011" class="link-group">
-                  
-                  <button class="link-icon orange">
-                    <i class="fa fa-phone"></i>
-                  </button>
-
-                  <span class="link-text">01685 377 011</span>
-
-                </a>
-
-                <a href="" class="link-group">
-                  
-                  <button class="link-icon orange">
-                    <i class="fa fa-map-signs"></i>
-                  </button>
-
-                  <span class="link-text">Mikerry Rail Ltd. Unit 1 Pontsarn Road, Merthyr Tydfil, Mid Glamorgan CF48 2TN</span>
-
-                </a>
-
-              </div>
-
-              <div class="large-4 medium-4 small-12 columns">
-                
-                <h3 class="footer-title orange">Sitemap</h3> 
-
-                <ul class="menu">
-                  
-                  <li><a href="home.html">Home</a></li>
-
-                  <li><a href="about.html">About Us</a></li>
-
-                  <li><a href="services.html">Services</a></li>
-
-                  <li><a href="portfolio.html">Portfolio</a></li>
-
-                  <li><a href="contact.html">Contact</a></li>
-
-                </ul>               
-
-              </div>
-
-              <div class="large-4 medium-4 small-12 columns">
-                
-                <h3 class="footer-title orange">Follow Us</h3>
-
-                <a href="" class="icon small orange"><i class="fa fa-facebook"></i></a>
-
-                <a href="" class="icon small orange"><i class="fa fa-twitter"></i></a>
-
-                <a href="" class="icon small orange"><i class="fa fa-linkedin"></i></a>
-
-                <a href="" class="icon small orange"><i class="fa fa-google"></i></a>
-
-
-
-              </div>
+              <div class="divider"></div>
 
             </div>
 
-            <div class="row">
-              
-              <div class="large-12 medium-12 small-12 columns text-center">
-                
-                <p class="copyright">Copyright © 2007 Mikerry Rail Ltd., All rights reserved.</p>
-
-              </div>
-
-            </div>
-
-          </footer>
+          </div>
 
         </div>
 
-      <!-- close wrapper, no more content after this -->
+      </div>            
+
+    </div>
+
+    <div id="projects" class="content-padding fullWidth">
+
+      <div class="project-filter">
+        
+        <div class="row">
+          
+          <div class="large-12 medium-12 small-12 columns">
+            
+            <div class="project-nav">
+                
+              <ul>
+                
+                <li><a class="active" data-filter="*">All</a></li>
+
+                <li><a data-filter=".railway">Railway</a></li>
+
+                <li><a data-filter=".construction">Construction</a></li>
+
+                <li><a data-filter=".building">Building</a></li>
+
+              </ul>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div> 
+
+      <div class="row">
+        
+        <div class="large-12 medium-12 small-12 columns">
+          
+          <div class="project-grid">
+              
+            <div class="project-item railway">
+              
+              <div class="project-wrapper">
+              
+                <div class="project-bg" style="background-image: url('assets/images/placeholder-2.jpg');"></div>
+
+                <div class="project-overlay">
+                  
+                  <div class="project-info-wrapper">
+                    
+                    <h4 class="project-title">Project Title</h4>
+
+                    <p class="project-tag">Tag, Tag, Tag</p>
+
+                    <a href="single-project.html" class="button hollow small">View Project</a>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="project-item building">
+              
+              <div class="project-wrapper">
+              
+                <div class="project-bg" style="background-image: url('assets/images/placeholder-2.jpg');"></div>
+
+                <div class="project-overlay">
+                  
+                  <div class="project-info-wrapper">
+                    
+                    <h4 class="project-title">Project Title</h4>
+
+                    <p class="project-tag">Tag, Tag, Tag</p>
+
+                    <a href="single-project.html" class="button hollow small">View Project</a>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="project-item construction">
+              
+              <div class="project-wrapper">
+              
+                <div class="project-bg" style="background-image: url('assets/images/placeholder-2.jpg');"></div>
+
+                <div class="project-overlay">
+                  
+                  <div class="project-info-wrapper">
+                    
+                    <h4 class="project-title">Project Title</h4>
+
+                    <p class="project-tag">Tag, Tag, Tag</p>
+
+                    <a href="single-project.html" class="button hollow small">View Project</a>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="project-item railway">
+              
+              <div class="project-wrapper">
+              
+                <div class="project-bg" style="background-image: url('assets/images/placeholder-2.jpg');"></div>
+
+                <div class="project-overlay">
+                  
+                  <div class="project-info-wrapper">
+                    
+                    <h4 class="project-title">Project Title</h4>
+
+                    <p class="project-tag">Tag, Tag, Tag</p>
+
+                    <a href="single-project.html" class="button hollow small">View Project</a>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="project-item building">
+              
+              <div class="project-wrapper">
+              
+                <div class="project-bg" style="background-image: url('assets/images/placeholder-2.jpg');"></div>
+
+                <div class="project-overlay">
+                  
+                  <div class="project-info-wrapper">
+                    
+                    <h4 class="project-title">Project Title</h4>
+
+                    <p class="project-tag">Tag, Tag, Tag</p>
+
+                    <a href="single-project.html" class="button hollow small">View Project</a>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="project-item construction">
+              
+              <div class="project-wrapper">
+              
+                <div class="project-bg" style="background-image: url('assets/images/placeholder-2.jpg');"></div>
+
+                <div class="project-overlay">
+                  
+                  <div class="project-info-wrapper">
+                    
+                    <h4 class="project-title">Project Title</h4>
+
+                    <p class="project-tag">Tag, Tag, Tag</p>
+
+                    <a href="single-project.html" class="button hollow small">View Project</a>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
 
       </div>
 
     </div>
+
+    <footer class="footer">
+      
+      <div class="row">
+        
+        <div class="large-4 medium-4 small-12 columns">
+          
+          <h3 class="footer-title orange">Company Details</h3>
+
+          <a href="emailto:admin@mikerryrail.co.uk" class="link-group">
+            
+            <button class="link-icon orange">
+              <i class="fa fa-envelope"></i>
+            </button>
+
+            <span class="link-text">admin@mikerryrail.co.uk</span>
+
+          </a>
+
+          <a href="tel:01685377011" class="link-group">
+            
+            <button class="link-icon orange">
+              <i class="fa fa-phone"></i>
+            </button>
+
+            <span class="link-text">01685 377 011</span>
+
+          </a>
+
+          <a href="" class="link-group">
+            
+            <button class="link-icon orange">
+              <i class="fa fa-map-signs"></i>
+            </button>
+
+            <span class="link-text">Mikerry Rail Ltd. Unit 1 Pontsarn Road, Merthyr Tydfil, Mid Glamorgan CF48 2TN</span>
+
+          </a>
+
+        </div>
+
+        <div class="large-4 medium-4 small-12 columns">
+          
+          <h3 class="footer-title orange">Sitemap</h3> 
+
+          <ul class="menu">
+            
+            <li><a href="home.html">Home</a></li>
+
+            <li><a href="about.html">About Us</a></li>
+
+            <li><a href="services.html">Services</a></li>
+
+            <li><a href="portfolio.html">Portfolio</a></li>
+
+            <li><a href="contact.html">Contact</a></li>
+
+          </ul>               
+
+        </div>
+
+        <div class="large-4 medium-4 small-12 columns">
+          
+          <h3 class="footer-title orange">Follow Us</h3>
+
+          <a href="" class="icon small orange"><i class="fa fa-facebook"></i></a>
+
+          <a href="" class="icon small orange"><i class="fa fa-twitter"></i></a>
+
+          <a href="" class="icon small orange"><i class="fa fa-linkedin"></i></a>
+
+          <a href="" class="icon small orange"><i class="fa fa-google"></i></a>
+
+
+
+        </div>
+
+      </div>
+
+      <div class="row">
+        
+        <div class="large-12 medium-12 small-12 columns text-center">
+          
+          <p class="copyright">Copyright © 2007 Mikerry Rail Ltd., All rights reserved.</p>
+
+        </div>
+
+      </div>
+
+    </footer>
 
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/what-input/dist/what-input.js"></script>

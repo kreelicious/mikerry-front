@@ -161,11 +161,58 @@ $teriary-font: 'Montserrat', Arial, sans-serif;
 
 /* ### HEADER STYLES ### */
 
-.logo{width: 186px;height: 50px;display: inline-block;}
+#masthead{
+	&.site-header{background: $white;z-index: 10;}
+	.top-bar{padding: 0;
+		.top-bar-left,.top-bar-right{width: auto;}
+	}
+	.logo{padding: 1.5625rem 0;display: block;
+		h1{width: 186px;height: 50px;margin: 0;padding: 0;text-indent: -9999px;background-image: url('../images/mikerry-logo.svg');}
+	}
+	#primary-nav{padding: 1.5625rem 0;display: block;
+		.navigation{display: table;background: $white;
+			ul{margin: 0;padding: 0;outline: 0;list-style: none;list-style-position: outside;display: table-cell;
+				li{font-weight: bold;text-transform: uppercase;display: inline-block;float: left;
+					a{padding: 1.0625rem 1.25rem;line-height: 1;display: block;
+						&:hover{color: $secondary-color;}
+					}
+				}
+			}
+			@include breakpoint(medium down){display: none;width: 100%;position: absolute;top: 100%;left: 0;
+				ul{
+					li{width: 100%;border-top: 1px solid $light-gray;
+						&:last-child{border-bottom: 1px solid $light-gray;}
+					}
+				}
+			}
+		}
+		.nav-trigger{height: 100%;padding: 0 1rem;display: table;font-weight: bold;text-transform: uppercase;
+			span{display: table-cell;vertical-align: middle;
+				em{width: 22px;height: 2px;margin: 16px auto 8px;background-color: $secondary-color;transition: background-color .2s;backface-visibility: hidden;display: block;position: relative;
+					&:before,&:after{position: absolute;content: '';;left: 0;width: 22px;height: 2px;background-color: $secondary-color;display: block;backface-visibility: hidden;@include transition( all .3s );}
+					&:before{@include translateY(-6px);}
+					&:after{@include translateY(6px);}
+				}
+			}
+		}
+		&.nav-open{
+			.navigation{display: block;}
+			.nav-trigger{
+				span{
+					em{background-color: transparent;
+						&:before{@include rotate(-45deg);}
+						&:after{@include rotate(45deg);}
+					}
+				}
+			}
+		}
+		.cta{padding: 0.625rem 1.25rem;font-weight: bold;color: $white;text-transform: uppercase;text-align: center;background-color: $primary-color;display: table-cell;vertical-align: middle;
+			&:hover{background-color: $secondary-color;}
+			@include breakpoint(medium down){margin: 1rem;display: block;}
+		}
+	}
+}
 
-.site-header{background: $white;z-index: 10;}
-
-.title-bar{width: 100%;position: fixed;z-index: 1;}
 
 
 /* ### GENERAL STYLES ### */
@@ -288,6 +335,10 @@ svg.brand-icon{width: 86px;height: 86px;@include transition(0.3s ease-in-out);
 
 }
 
+.owl-dot{width: 1rem;height: 1rem;margin: 1.875rem 0.625rem;display: inline-block;background: $medium-gray;border-radius: 50%;
+	&.active{background-color: $secondary-color;}
+}
+
 .value{margin-bottom: 2.5rem;
 	.brand-icon{float: left;margin-right: 1.25rem;}
 	.value-text{position: relative;overflow: hidden;text-align: left;}
@@ -308,11 +359,17 @@ svg.brand-icon{width: 86px;height: 86px;@include transition(0.3s ease-in-out);
 	.tabs-panel{padding: 0;}
 }
 
-ul.single-project-nav{margin: 0;border-bottom: 2px solid $light-gray;background: $white;
-	li{display: inline-block;list-style: none;
-		svg.left-arrow{width: 5rem;height: 1.25rem;fill: $medium-gray;}
-		svg.right-arrow{width: 5rem;height: 1.25rem;fill: $medium-gray;@include rotate(180deg);}
-		svg.project-menu{width: 1.375rem;height: 1.375rem;fill: $primary-color;}
+ul.single-project-nav{margin: 0;border-bottom: 2px solid $light-gray;background: $white;display: block;
+	li{display: inline-block;list-style: none;vertical-align: top;
+		.left-arrow{height: 3.75rem;display: block;border-width: 0 2px;border-color: $light-gray;border-style: solid;
+			svg{width: 5rem;height: 100%;margin: 0 1.25rem;fill: $medium-gray;}
+		}
+		.right-arrow{height: 3.75rem;display: block;border-width: 0 2px;border-color: $light-gray;border-style: solid;
+			svg{width: 5rem;height: 100%;margin: 0 1.25rem;fill: $medium-gray;}
+		}
+		.project-menu{width: 3.75rem;height: 3.75rem;display: block;
+			svg{width: 2.5rem;height: 2.5rem;margin: 0.5625rem;fill: $white;background: $primary-color;border-radius: 50%;}
+		}
 	}
 }
 
@@ -359,7 +416,3 @@ ul.single-project-nav{margin: 0;border-bottom: 2px solid $light-gray;background:
 		}
 	}
 }
-
-
-
-
