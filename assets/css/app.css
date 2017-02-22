@@ -5471,11 +5471,15 @@ a.thumbnail {
         position: absolute;
         top: 100%;
         left: 0; }
-        #masthead #primary-nav .navigation ul li {
-          width: 100%;
-          border-top: 1px solid #e6e6e6; }
-          #masthead #primary-nav .navigation ul li:last-child {
-            border-bottom: 1px solid #e6e6e6; } }
+        #masthead #primary-nav .navigation ul {
+          min-width: 100%;
+          display: inline-block; }
+          #masthead #primary-nav .navigation ul li {
+            width: 100%;
+            border-top: 1px solid #e6e6e6;
+            text-align: center; }
+            #masthead #primary-nav .navigation ul li:last-child {
+              border-bottom: 1px solid #e6e6e6; } }
   #masthead #primary-nav .nav-trigger {
     height: 100%;
     padding: 0 1rem;
@@ -5551,6 +5555,8 @@ a.thumbnail {
       #masthead #primary-nav .cta {
         margin: 1rem;
         display: block; } }
+    #masthead #primary-nav .cta i {
+      margin-right: 1rem; }
 
 /* ### GENERAL STYLES ### */
 .fullWidth {

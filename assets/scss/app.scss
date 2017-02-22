@@ -179,8 +179,8 @@ $teriary-font: 'Montserrat', Arial, sans-serif;
 				}
 			}
 			@include breakpoint(medium down){display: none;width: 100%;position: absolute;top: 100%;left: 0;
-				ul{
-					li{width: 100%;border-top: 1px solid $light-gray;
+				ul{min-width: 100%;display: inline-block;
+					li{width: 100%;border-top: 1px solid $light-gray;text-align: center;
 						&:last-child{border-bottom: 1px solid $light-gray;}
 					}
 				}
@@ -189,7 +189,7 @@ $teriary-font: 'Montserrat', Arial, sans-serif;
 		.nav-trigger{height: 100%;padding: 0 1rem;display: table;font-weight: bold;text-transform: uppercase;
 			span{display: table-cell;vertical-align: middle;
 				em{width: 22px;height: 2px;margin: 16px auto 8px;background-color: $secondary-color;transition: background-color .2s;backface-visibility: hidden;display: block;position: relative;
-					&:before,&:after{position: absolute;content: '';;left: 0;width: 22px;height: 2px;background-color: $secondary-color;display: block;backface-visibility: hidden;@include transition( all .3s );}
+					&:before,&:after{position: absolute;content: '';left: 0;width: 22px;height: 2px;background-color: $secondary-color;display: block;backface-visibility: hidden;@include transition( all .3s );}
 					&:before{@include translateY(-6px);}
 					&:after{@include translateY(6px);}
 				}
@@ -209,6 +209,7 @@ $teriary-font: 'Montserrat', Arial, sans-serif;
 		.cta{padding: 0.625rem 1.25rem;font-weight: bold;color: $white;text-transform: uppercase;text-align: center;background-color: $primary-color;display: table-cell;vertical-align: middle;
 			&:hover{background-color: $secondary-color;}
 			@include breakpoint(medium down){margin: 1rem;display: block;}
+			i{margin-right: 1rem;}
 		}
 	}
 }
